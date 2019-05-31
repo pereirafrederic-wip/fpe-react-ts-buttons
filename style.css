@@ -1,0 +1,17 @@
+h1, p {
+  font-family: Lato;
+}
+
+.beetwen{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.around{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
