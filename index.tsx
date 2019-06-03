@@ -6,7 +6,7 @@ import {
   mdiCancel,
 } from '@mdi/js'
 
-import './style.scss';
+import './style.scss'
 
 interface AppProps { }
 interface AppState {
