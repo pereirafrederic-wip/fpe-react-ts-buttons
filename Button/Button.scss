@@ -1,7 +1,6 @@
 
 
 .Button{
-  margin: 0;
   padding: 0;
   text-decoration: none;
 
@@ -15,8 +14,8 @@
   border: 1px solid rgba(#0D3D55, 0.4);
   margin: 5px;
   border-radius: 5px;
-     fill: white;
-          color: white;
+  fill: white;
+  color: white;
 
  &:hover{
     background-color: rgba(#0D3D55, 0.4);
@@ -29,6 +28,7 @@
     align-items: center;
     padding: 1px;
     flex-grow: 1;
+    border: 1px solid white;
   
     .Button__container-in{
       display: flex;
@@ -36,6 +36,7 @@
       padding: 1px;
       flex-grow: 1;
       align-items: center;
+      background-color: rgba(#0D3D55, 0.4);
       .Button__container__icon{
         border-radius: 20%;
         width: 20px;
