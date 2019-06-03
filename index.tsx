@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
-import Buttons from './Buttons';
+import ButtonCbp , {ButtonValid} from './ButtonCbp';
 
 import './style.css';
 
@@ -23,13 +23,7 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-      <Buttons mode='around'>
-        <Hello name={this.state.name1} />
-        <Hello name={this.state.name2} />
-      </Buttons>
-        <p>
-          Start editing to see some magic happen :)
-        </p>
+      <ButtonValid />
       </div>
     );
   }
