@@ -12,7 +12,7 @@ interface IButtonProps {
   icon?:string
 }
 
-const ButtonCbp = memo(
+const ButtonCommun = memo(
   ({
     label,icon
   }: IButtonProps) => {
@@ -31,8 +31,8 @@ return         <button
   }
 )
 ButtonValid =() => {
-  return <ButtonCbp icon={mdiCheck as string} />
+  return <ButtonCommun icon={mdiCheck as string} />
 }
 
 export const ButtonValid; 
-export default ButtonCbp
+export default ButtonCommun

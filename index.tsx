@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
-import ButtonCbp , {ButtonValid} from './ButtonCbp';
+import ButtonCommun , {ButtonValid} from './ButtonCommun';
+import {
+  mdiCancel,
+} from '@mdi/js'
 
 import './style.css';
 
@@ -23,6 +26,7 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
+      <ButtonCommun icon={mdiCancel}/>
       <ButtonValid />
       </div>
     );
