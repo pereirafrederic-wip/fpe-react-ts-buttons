@@ -2,16 +2,18 @@ h1, p {
   font-family: Lato;
 }
 
-.beetwen{
+
+.flex-beetwen{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.around{
+.flex-around{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
+

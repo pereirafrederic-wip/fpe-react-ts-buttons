@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
-import ButtonCommun , {ButtonValid} from './ButtonCommun';
+import ButtonCommun , {ButtonValid} from './Button/ButtonCommun';
 import {
   mdiCancel,
 } from '@mdi/js'
 
-import './style.css';
+import './style.scss';
 
 interface AppProps { }
 interface AppState {
