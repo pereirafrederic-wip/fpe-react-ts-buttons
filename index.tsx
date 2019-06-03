@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
-import ButtonCommun , {ButtonValid} from './Button/ButtonCommun';
+import Button , {ButtonValid} from './Button/Button';
 import {
   mdiCancel,
 } from '@mdi/js'
@@ -26,7 +26,7 @@ class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-      <ButtonCommun icon={mdiCancel}/>
+      <Button icon={mdiCancel} label={"cancel"}/>
       <ButtonValid />
       </div>
     );

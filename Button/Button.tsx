@@ -5,7 +5,7 @@ import {
   mdiCheck,
 } from '@mdi/js'
 
-import './ButtonCommun.scss'
+import './Button.scss'
 
 
 
@@ -14,29 +14,31 @@ interface IButtonProps {
   icon?: string
 }
 
-const ButtonCommun = memo(
+const Button = memo(
   ({
     label, icon
   }: IButtonProps) => {
 
     return <button
-      className={"button"}
-      disabled={true}
+      className={"Button"}
       type="button"
       tabIndex={-1}
     >
-      <div className="button-container">
-        <div className="icon-container">
+      <div className="Button__container-out">
+      <div className="Button__container-in">
+        <div className="Button__container__icon">
           <Icon className="mdi-icon" path={icon} />
         </div>
-        <div className="label">{"valid"}</div>
+        <div className="Button__container__label">
+        {label}</div>
+      </div>
       </div>
     </button>
   }
 )
 ButtonValid = () => {
-  return <ButtonCommun icon={mdiCheck as string} />
+  return <Button icon={mdiCheck as string} label={'valid'}/>
 }
 
 export const ButtonValid;
-export default ButtonCommun
+export default Button
