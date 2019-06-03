@@ -28,11 +28,18 @@ const Button = memo(
       <div className="Button__container-out">
         <div className="Button__container-in">
 
-          <div className="Button__container__icon">
-            <Icon className="mdi-icon" path={icon} />
-          </div>
-
           <MediaQuery minDeviceWidth={1224} >
+            <div className="Button__container__icon tooltip">
+              <Icon className="mdi-icon" path={icon} />
+              
+            </div>
+            <span className="tooltiptext">{label}</span>
+          </MediaQuery>
+
+          <MediaQuery maxDeviceWidth={1224} >
+              <div className="Button__container__icon">
+              <Icon className="mdi-icon" path={icon} />
+            </div>
             <div className="Button__container__label">{label}</div>
           </MediaQuery>
         </div>
